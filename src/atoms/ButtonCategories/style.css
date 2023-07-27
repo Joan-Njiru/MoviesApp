@@ -1,0 +1,15 @@
+.categories{
+    display: inline;
+    justify-content: space-between;
+}
+
+#categories{
+  background-color: #77797a;
+  text-align: center;
+  margin: 4.5em;
+  color: #fff;
+  padding: 12px 45px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
