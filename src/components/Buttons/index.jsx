@@ -1,4 +1,4 @@
-// CategoryButtonsContainer.jsx
+
 import React from 'react';
 import CategoriesButton from '../../atoms/ButtonCategories/categories';
 import { useState } from 'react';

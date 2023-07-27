@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { getMovieDetails } from "../../utils/utilities";
 const IMAGE_BASE_URL=process.env.REACT_APP_IMAGE_BASE_URL;
-// const DETAIL_URL= process.env.REACT_APP_BASE_DETAIL
-// const BASE_URL=process.env.REACT_APP_BASE_URL
+
+
+
 const MovieDetails =()=>{
     const {viewId}= useParams();
     const [moviedetail,setMoviedetail]=useState(null)
@@ -45,7 +46,6 @@ return(
           </div>
           <div>
             <div>
-              <button>Watch Now</button>
             </div>
           </div>
         </div>
