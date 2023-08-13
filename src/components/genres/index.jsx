@@ -64,7 +64,7 @@
 // export default Getcategory;
 
 import React, { useEffect, useState } from "react";
-import { getGenre } from "../../utilis.js/utilities";
+import { getGenre } from "../../utilis/utilities";
 import "./style.css";
 
 const Getcategory = ({ selectedCategory, handleCategoryChange }) => {

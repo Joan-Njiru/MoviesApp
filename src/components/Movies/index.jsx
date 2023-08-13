@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import MovieDetails from "../MovieDetail";
 import Getcategory from "../genres";
-import { getMovies } from "../../utilis.js/utilities";
+import { getMovies } from "../../utilis/utilities";
 import ImageConatiner from "../../atoms/ImageContainer";
 
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './style.css';
 import { FaPlay } from 'react-icons/fa';
-import { getMovieDetails,fetchMovieVideos } from '../../utilis.js/utilities';
+import { getMovieDetails,fetchMovieVideos } from '../../utilis/utilities';
 
 const IMAGE_BASE_URL = process.env.REACT_APP_IMAGE_BASE_URL;
 
