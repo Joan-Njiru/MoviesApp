@@ -1,0 +1,56 @@
+.movie-details {
+    margin: 20px;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+ 
+
+    
+  }
+  .movie-details p{
+    font-size: 120px;
+  }
+  .movie-details h2{
+    font-size: 120px;
+  }
+  
+   img {
+    max-width: 300px; 
+    height: auto;
+    margin-right: 20px;
+  }
+  
+
+  
+  .movie-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: bisque;
+  }
+  
+  .movie-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: bisque;
+  }
+  
+  .movies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, auto);
+    gap: 50px; 
+   
+  }
+  .mainmovie{
+    margin-top: 200px;
+  }
+  
+
+  
+  .movies img {
+    max-width: 100%;
+    max-height: 100%;
+  }

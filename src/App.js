@@ -1,35 +1,33 @@
-
-import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes,Navigate } from 'react-router-dom';
-import MovieList from './components/MovieList';
-import CategoryButtonsContainer from './components/Buttons';
-import MoviesByCategory from './components/MoviesByCategory/moviebycategory';
+import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import MovieLists from './components/carosel';
+import MovieDetails from './components/MovieDetail';
+import MovieList from './components/Movies';
+import Footer from './components/footer';
 
-import MovieDetails from './components/MovieDetails/details';
+
 
 
 
 function App() {
   return (
-   
-    
-    <div className='MoviesApp'>
-    
-       <Router>
-       <MovieList/>
+    <div className='main'>
+      <BrowserRouter>
+        <Navbar />
+        <MovieLists />
+        
 
         <Routes>
-       <Route  path="/" element={<Navigate to ="/MovieList/"/>} />
-       <Route path='/MovieList'  element={<MovieList/>}/>
-       <Route path='/MovieDetails/:viewId'  element={<MovieDetails/>} />
-        <Route path="/" component={CategoryButtonsContainer} />
-        <Route path="/category/:categoryName" element={MoviesByCategory} />
-        </Routes> 
-    </Router>
-
+          <Route path='/' element={<MovieList />} />
+          <Route path='/movies/:movieId' element={<MovieDetails />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+

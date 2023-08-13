@@ -1,0 +1,28 @@
+
+
+   /* style.css */
+
+   .category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    
+  }
+  
+  .category-buttons button {
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #818787;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .category-buttons button.active {
+    background-color: #E59809;
+  }
+  
