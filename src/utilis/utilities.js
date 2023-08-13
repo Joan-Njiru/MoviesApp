@@ -97,20 +97,20 @@ export const getMovieCredits = async (movieId) => {
   }
 };
 
-export const getGenres = async () => {
-  try {
-    const response = await fetch(`${BASE_URL}/3/genre/movie/list`, {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${ACCESS_TOKEN}`,
-      },
-    });
-    const result = await response.json();
-    return result;
-  } catch (error) {
-    throw new Error('Error fetching genres: ' + error.message);
-  }
-};
+// export const getGenres = async () => {
+//   try {
+//     const response = await fetch(`${BASE_URL}/3/genre/movie/list`, {
+//       method: 'GET',
+//       headers: {
+//         Authorization: `Bearer ${ACCESS_TOKEN}`,
+//       },
+//     });
+//     const result = await response.json();
+//     return result;
+//   } catch (error) {
+//     throw new Error('Error fetching genres: ' + error.message);
+//   }
+// };
 
 export const getGenre = async () => {
   try {
