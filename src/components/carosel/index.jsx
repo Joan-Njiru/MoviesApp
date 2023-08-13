@@ -5,7 +5,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./style.css";
 import { getCategories,searchMovies } from "../../utilis.js/utilities";
-// import { getCategories ,searchMovies} from "../../utils/utilities";
 import ImageContainer from "../../atoms/ImageContainer";
 
 
